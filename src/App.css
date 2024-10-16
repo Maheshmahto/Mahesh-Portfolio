@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif Oriya", serif;
+  text-decoration: none;
+}
+/* navigation bar*/
+/*  */
+.navbar{
+  width: 30%;
+ position: fixed;
+ background:rgba(255, 255, 255, 0.1) ;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+backdrop-filter: blur(10px);
+top: 10px;
+left: 35%;
+padding: 10px 10px;
+border-radius: 30px;
+
+}
+.navbar span{
+  color: white;
+  font-size:20px;
+  position: relative;
+  text-decoration: none;
+}
+.navbar span:hover{
+  transform: scale(1.2);
+}
+.navbar span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  bottom: -1px; /* Adjusts the distance of the line from the text */
+  left: 0;
+  transition:  0.3s ease;
+}
+
+.navbar span:hover::after {
+  width: 100%;
+}
