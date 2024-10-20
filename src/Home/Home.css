@@ -1,30 +1,14 @@
 .home-container{
    height: 100vh;
-   width: 100vw;
+   width: 100%;
    overflow: hidden;
    /* width: 100%; */
    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); 
    /* background: black; */
    display: flex;
+   /* border: 1px solid magenta; */
   
 
-}
-.earth-img{
-    height: 600px;
-    width: 600px;
-    align-items: center;
-    margin-left: -20%;
-    margin-top: 5%;
-    animation: earth 50s  linear infinite;
-    z-index: 2;
-}
-@keyframes earth{
-    from {
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
 }
 
 
@@ -594,9 +578,11 @@
     }
 }
 
-.home-heading{
+.home-heading {
     color: white;
     top: 45%;
+    display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 5rem;
     letter-spacing: 1.1rem;
@@ -620,10 +606,55 @@
         transform:rotateY(0deg) ;
     }
 }
+
+.home-container{
+    overflow-y: hidden;
+
+}
+.earth-img{
+    position: relative;
+    width: 600px;
+    left: 400px;
+    
+    border-radius: 50%;
+    position: absolute;
+   /* overflow: hidden; */
+    animation: earth 50s  linear infinite;
+    z-index: 1;
+}
+@keyframes earth{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes leftin {
+    0%{
+       transform: translateX(-100%);
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.rocket-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: leftin  1s ease;
+}
+
+
 .rocket-img{
     position:absolute;
-    height: 150px;
-    top: 40%;
+    width: 400px;;
+    left: -10px;
     z-index: 1;
     animation: rocket-move 15s forwards ;
  
@@ -636,7 +667,7 @@
     }
     50%{
         top: 38%;
-        left: 90%;
+        left: 72%;
         opacity: 0;    
     }
     100%{
@@ -679,3 +710,23 @@ h2 span:nth-child(6){
     animation-delay: 3s;
 
 }
+@media screen and (max-width:1025px) {
+    /* .heading{
+      color: red;
+     } */
+     /* .earth-img{
+        margin-top: 60%;
+        width: 48%;
+     } */
+  }
+  @media screen and (max-width:600px) {
+    .heading{
+      color: red;
+     }
+     /* .earth-img{
+        
+        margin-top: 70%;
+        width: 80%;
+        margin-left: -50%;
+     } */
+  }

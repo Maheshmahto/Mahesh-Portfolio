@@ -5,15 +5,15 @@
     align-items: center;
 }
 /* profile card */
-.profile-card{
-    width: 20%;
+.profile-card{ 
+    width: 22%;
     height: 430px;
     /* border: 2px solid black; */
     margin:  0 30px;
     border-radius: 20px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+    animation: leftin 1s ease-in;
     /* background-color: black; */
 }
 .profile-card h2{
@@ -22,6 +22,8 @@
 }
 .bg-img{
     overflow: hidden;
+    z-index: 1;
+    position: relative;
 }
 .bg-img img{
     object-fit: cover;
@@ -29,28 +31,35 @@
     width: 100%;
     overflow: hidden;
     border-radius: 17px 17px 0 0;
-    z-index: 1;
+   
+}
+.photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   top: 100px;
+   position: relative;
+   top: -45px;
+   z-index: 2;
+   margin-bottom: -30px;
 }
 .profile-img{
-    position: absolute;
-    top: 160px;
-    left: 37%;
+    position: relative;
+    display: flex;
+    justify-content: center;
     height:90px ;
-    width: 100px;
-    border-radius: 50%;
-}
-.profile-img img{
-    /* height: 100px;
     width: 90px;
     border-radius: 50%;
-    z-index: 100; */
+    /* border: 1px solid white; */
+}
+.profile-img img{
+
     object-fit: cover;
     width: 100%;
     border-radius: 50%;
 
 }
 .profile-card h2{
-  margin-top: 65px;
   text-align: center;
 }
 .titel{
@@ -66,7 +75,9 @@
      margin: 0 auto;
      outline: none;
      border: none;
-     background-color:black;
+     /* background-color:black; */
+     border: 1px solid white;
+
 
      margin-top: 5px;
 
@@ -101,11 +112,35 @@
  transform: scale(1.05);
 }
 .skills{
-    width: 70%;
-    height: 520px;
-    /* border: 1px solid black; */
+    width: 75%;
+    height: 80%;
+    margin-right: 10px;
+    
+    /* border: 1px solid white; */
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    animation: rightin 1s ease-in;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+.skills::-webkit-scrollbar{
+    height: 2px;
+    width: 5px ;
+}
+.skills::-webkit-scrollbar-track{
+   background: #1b2735;
+   background: white;
+   border-radius: 15px;
+}
+.skills::-webkit-scrollbar-thumb{
+    background: #1b2735;
 
 }
 .skills h1{
@@ -114,8 +149,9 @@
 }
 .sill-container{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     margin: 20px;
+    /* border: 1px solid white; */
 }
 
 .skill-rectangle{
@@ -162,5 +198,144 @@
     100%{
         transform: translateY(0);
 
+    }
+}
+/* contact form */
+.contact-container{
+     width: 100%;
+     /* border: 1px solid wheat; */
+     display: flex;
+     justify-content: center;
+     /* border: 1px solid white; */
+}
+.contact{
+    width: 50%;
+    /* border: 1px solid wheat; */
+     align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 10px;
+     /* flex-direction: column; */
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-sizing: border-box;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.name{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.name input{
+    
+    padding: 10px;
+    background: transparent;
+    margin: 10px;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    /* border: none; */
+}
+
+.email{
+    margin: 10px;
+    padding:10px ;
+   width: 100%;
+  background: transparent;
+  color: white;
+  border:1px solid white;
+
+  /* outline: none; */
+  /* border: none; */
+}
+.message{
+    margin: 10px;
+    padding:10px ;
+   width: 100%;
+  background: transparent;
+  resize: none;
+  color: white;
+  border: 1px solid white;
+  /* border: none; */
+  /* outline: none; */
+ 
+}
+.email, .message, .name input {
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    border-radius: 10px;
+   
+}
+
+
+
+.contact button{
+    margin: 10px;
+    border: 1px solid white;
+}
+input:focus {
+    outline: none;
+  }
+textarea:focus{
+    outline: none;
+}
+ footer{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-top: 1px solid white;
+    align-items: center;
+ }
+@media screen and (max-width :1025px) {
+    .skills h1{
+        /* color: red; */
+    }
+    .skills{
+        overflow-x: hidden;
+    }
+    .sill-container{
+        /* border: 1px solid white; */
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        white-space:normal ;
+        
+    }
+    .contact-container{
+        /* border: 1px solid white; */
+
+    }
+    .contact{
+        /* border: 1px solid white; */
+        width: 100%;
+    }
+    .profile-card{
+        width: 40%;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .skills h1{
+        /* color: hotpink; */
+    }
+    .outer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-card{
+        margin-top: 100px;
+        width: 80%;
+         margin-bottom: 30px;
+    }
+    .skills{
+        width: 90%;
     }
 }

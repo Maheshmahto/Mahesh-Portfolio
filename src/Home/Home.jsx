@@ -1,44 +1,73 @@
-import React from 'react'
+import React, { useState } from "react";
 import { IoHome } from "react-icons/io5";
 import { FaCode } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
-import { MdContacts } from "react-icons/md";
-import About from '../About/About';
+import About from "../About/About";
+
+import Project from "../Project/Project";
+import "./Home.css";
+import BackGroud from "./BackGroud";
 
 
-import './Home.css'
 const Home = () => {
-  return (
-    <div className='home-container'>
-    
+  const [home,setHome]=useState(true);
+  const [project,setProject]=useState(false);
+  const [about,setAbout]=useState(false);
+ 
+  const handleHome=()=>{
+   console.log('home');
+   setHome(true);
+   setProject(false);
+   setAbout(false);
+  }
+  const handleProject=()=>{
+   setHome(false);
+   setProject(true);
+   setAbout(false);
+   console.log('project');
 
-       <div className='star1'></div>
-       <div className='star2'></div>
-       <div className='star3'></div>
-       <div className='star4'></div>
-    
-       <nav className='navbar'>
-        <span href=""><IoHome /></span>
-        <span href=""><FaCode />  </span>
-        <span href=""><FaUser /> </span>
-        <span href=""><MdContacts /></span>
-      </nav>
-     <About></About>
+  }
+  const handleAbout=()=>{
+   setHome(false);
+   setProject(false);
+   setAbout(true);
+   console.log('about');
+
+  }
+  return (
+   
+
+    <div className="home-container">
+      <div className="star1"></div>
+      <div className="star2"></div>
+      <div className="star3"></div>
+      <div className="star4"></div>
+
+      <nav className="navbar">      
+       <span onClick={handleHome}> <IoHome /></span>
+       <span onClick={handleProject} ><FaCode /></span>
+       <span onClick={handleAbout}><FaUser /></span>
+     </nav>
       
-      {/* <img className='earth-img' src="src/Home/earthPlanet.png" alt="" />
-      <img className='rocket-img' src="src/Home/indian-flag-rocket.png " alt="" />
-      <h1 className='heading'>hello i'm</h1>
-       <h2 className="home-heading">
-        <span>M</span>
-        <span>a</span>
-        <span>h</span>
-        <span>e</span>
-        <span>s</span>
-        <span>h</span>
-       </h2> */}
+       {
+         about &&  <About></About>
+       }
+       
+       {
+        project &&  <Project />
+
+       }
+
+       {
+
+        home && <BackGroud></BackGroud>
+
+       }
+       
+
 
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
