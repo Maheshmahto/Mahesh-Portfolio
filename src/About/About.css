@@ -323,19 +323,24 @@ textarea:focus{
 
 }
 @media screen and (max-width:600px) {
-    .skills h1{
-        /* color: hotpink; */
-    }
+    
     .outer-container{
         display: flex;
         flex-direction: column;
     }
     .profile-card{
-        margin-top: 100px;
+        margin-top: 30px;
         width: 80%;
-         margin-bottom: 30px;
+       
+         margin-bottom: 10px;
     }
     .skills{
-        width: 90%;
+        width: 95%;
     }
+
+    /* contact */
+    /* .name{
+        display: grid;
+        width: 100%;
+    } */
 }

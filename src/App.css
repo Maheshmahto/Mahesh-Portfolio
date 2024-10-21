@@ -57,13 +57,13 @@ z-index: 10;
 }
 @media screen  and (max-width :600px){
   .navbar{
-    width: 40%;
-    left: 30%;
+    width: 48% !important;
+    left: 28%;
   }
 }
 @media screen  and (max-width :1024px){
 .navbar{
-  width: 40%;
+  width: 42%;
   left:30% ;
 }
 

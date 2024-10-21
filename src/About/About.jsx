@@ -15,11 +15,11 @@ const About = () => {
        
       <div className="profile-card">
         <div className="bg-img">
-          <img src="public/taj hotel.jpeg" alt="" />
+          <img src="/taj hotel.jpeg" alt="" />
         </div>
         <div className="photo-container">
         <div className="profile-img">
-          <img src="public/Mm.jpg" alt="" />
+          <img src="/Mm.jpg" alt="" />
         </div>
 
         </div>
@@ -226,7 +226,7 @@ const About = () => {
           </div>
           <div className="skill-rectangle">
             <div className="circle">
-              <img src="public/c++.png" alt="" />
+              <img src="/c++.png" alt="" />
             </div>
             <h4>C++</h4>
           </div>
