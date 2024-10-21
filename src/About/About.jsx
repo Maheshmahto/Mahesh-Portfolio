@@ -232,28 +232,33 @@ const About = () => {
           </div>
         </div>
         <h1>Contact me</h1>
-
+       <form action="https://formspree.io/f/xvgogzdg" method="POST" >
         <div className="contact-container">
           <div className="contact">
             <div className="name">
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
+              <input type="text" required placeholder="First Name" name="first name" />
+              <input type="text" required placeholder="Last Name" name="last name" />
             </div>
 
             <input
               type="text"
               className="email"
+              required
               placeholder="Enter your Email"
+              name="email"
             />
             <textarea
-              name=""
+              name="message"
               className="message"
               id=""
+              required
               placeholder="Enter your message"
+              
             ></textarea>
             <button>Submit</button>
           </div>
         </div>
+        </form>
         <footer>
           <p>Email :- maheshmahto1806@gmail.com</p>
         </footer>

@@ -27,7 +27,7 @@ import './Project.css'
         description:
           "Developed a dynamic front-end application for an educational technology platform",
         image: "src/Project/edtech-removebg-preview.png",
-        link: "",
+        link: "https://edtech-ecommerce.vercel.app/",
       },
       {
         title: "Notes",
