@@ -12,28 +12,28 @@ import './Project.css'
         title: "Sorting Visualizer",
         description:
           "You can  Visualized popular algorithms such as and Bubble sort , Selection sort , insertion sort, Quick sort and Merge sort . Created customizable input options to allow users to adjust parameters and see real changes in the algorithm’s execution",
-        image: "src/Project/sort-removebg-preview.png",
+        image: "public/sort-removebg-preview.png",
         link: "https://sorting-visualizer-liart-ten.vercel.app/",
       },
       {
         title: "Resume Builder",
         description:
           "The Resume Builder includes functionalities such as the ability to add, edit, and remove sections, ensuring flexibility in tailoring resumes to individual needs. ",
-        image: "src/Project/resume-removebg-preview.png",
+        image: "public/resume-removebg-preview.png",
         link: "https://resume-builder-for-developers.vercel.app/",
       },
       {
         title: "Edtech Website Front-end",
         description:
           "Developed a dynamic front-end application for an educational technology platform",
-        image: "src/Project/edtech-removebg-preview.png",
+        image: "public/edtech-removebg-preview.png",
         link: "https://edtech-ecommerce.vercel.app/",
       },
       {
         title: "Notes",
         description:
           "I built a notes app  in Ract that stores data in local storage, allowing users to customize the background of their notes for a personalized experience.",
-        image: "src/Project/notes-removebg-preview.png",
+        image: "public/notes-removebg-preview.png",
         link: "https://notes-app-olive-zeta.vercel.app/",
       },
     ];

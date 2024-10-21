@@ -3,7 +3,7 @@ import "./Loader.css";
 const Loader = () => {
   return (
     <div className="loader-container">
-        <img  className="mahesh" src="src/Preloader/MAHESH.png" alt="" />
+        <img  className="mahesh" src="public/MAHESH.png" alt="" />
       <div class="text3">
         <span>Loading...</span>
       </div>
