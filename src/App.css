@@ -13,6 +13,9 @@
 /*  */
 .nav-container{
  
+ 
+
+  
 }
 .navbar{
 width: 20%;
@@ -23,9 +26,14 @@ width: 20%;
  justify-content: space-around;
 backdrop-filter: blur(10px);
 top: 10px;
-left: 40%;
+/* left: 40%; */
+/* display: block; */
 padding: 15px 10px;
 border-radius: 30px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+/* border: 1px solid white; */
 z-index: 10;
 
 }
@@ -57,14 +65,16 @@ z-index: 10;
 }
 @media screen  and (max-width :600px){
   .navbar{
-    width: 48% !important;
-    left: 28%;
+    width: 50% !important;
+   
   }
 }
 @media screen  and (max-width :1024px){
 .navbar{
-  width: 42%;
-  left:30% ;
+  width: 40%;
+  position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
 
 }

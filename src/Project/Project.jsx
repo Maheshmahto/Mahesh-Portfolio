@@ -11,14 +11,14 @@ import './Project.css'
       {
         title: "Sorting Visualizer",
         description:
-          "You can  Visualized popular algorithms such as and Bubble sort , Selection sort , insertion sort, Quick sort and Merge sort . Created customizable input options to allow users to adjust parameters and see real changes in the algorithm’s execution",
+          "You can Visualized popular sorting algorithms using customizable input options to see real changes in the algorithm’s execution",
         image: "/sort-removebg-preview.png",
         link: "https://sorting-visualizer-liart-ten.vercel.app/",
       },
       {
         title: "Resume Builder",
         description:
-          "The Resume Builder includes functionalities such as the ability to add, edit, and remove sections, ensuring flexibility in tailoring resumes to individual needs. ",
+          "The Resume Builder includes functionalities such as add, edit, and remove sections, ensuring flexibility in tailoring resumes to individual needs. ",
         image: "/resume-removebg-preview.png",
         link: "https://resume-builder-for-developers.vercel.app/",
       },

@@ -47,10 +47,13 @@
   margin-left: 20px;
   animation: leftin 1s ease-in;
 }
+.content button{
+  border: 1px solid white;
+}
 
 .content h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  /* margin-bottom: px; */
   color: white;
 }
 
@@ -58,7 +61,7 @@
 .content .desc {
   font-size: 1.2rem;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .image {
@@ -97,8 +100,12 @@
   display: flex;
   gap: 10px;
   margin-top: 20px;
-  animation: bottomup 1s ease;
+  animation: bottomup 1.5s ease;
   margin-bottom: 10px;
+ 
+}
+.controls button{
+  border: 1px solid white;
 }
 @keyframes bottomup {
    0%{
@@ -131,15 +138,15 @@ button:hover{
 
 @media screen and (max-width :600px) {
   .slider-container{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     /* border: 1px solid white; */
   }
+
   .slide-item{
     display: flex;
     flex-direction: column-reverse;
    width: 100%;
-   /* border: 1px solid beige; */
   
   }
   .slide-item .active{
@@ -155,12 +162,14 @@ button:hover{
   }
   .image{
     width: 70%;
+    
+   
   }
 
 .controls{
- 
- /* margin-bottom: -10px; */
- /* border: 1px solid wheat; */
+ margin-bottom: 110px;
+ position: relative;
+ top: -20px;
 
 }
 }

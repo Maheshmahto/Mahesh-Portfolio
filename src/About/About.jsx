@@ -27,7 +27,7 @@ const About = () => {
         <h2>Mahesh Mahto</h2>
         <p className="titel">fronted-developer</p>
         <button className="resume-btn">
-          <a href="src/About/Mahesh_Mahto_resume.pdf">Resume</a>
+          <a href="/Mahesh_Mahto_resume.pdf">Resume</a>
         </button>
         <div className="social-icon">
           <a href="https://github.com/Maheshmahto" className="github">

@@ -5,7 +5,8 @@ const BackGroud = () => {
     <div className='home-name' >
      <img className='blackhole' src="/black-holes-removebg-preview.png"  alt="" />
       <img className='earth-img' src="/earthPlanet.png"alt="" />
-         <h1 className='myname'>Mahesh </h1>
+         
+         <h1 className='myname'>Mahesh  </h1>
 
     </div>
 

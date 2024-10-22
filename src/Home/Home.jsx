@@ -43,11 +43,15 @@ const Home = () => {
       <div className="star3"></div>
       <div className="star4"></div>
 
+
+
+      <div className="nav-container">
       <nav className="navbar">      
        <span onClick={handleHome}> <IoHome /></span>
        <span onClick={handleProject} ><FaCode /></span>
        <span onClick={handleAbout}><FaUser /></span>
      </nav>
+     </div>
       
        {
          about &&  <About></About>

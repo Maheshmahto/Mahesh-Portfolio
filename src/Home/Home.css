@@ -648,6 +648,7 @@ body,html{
     transform: translateX(-50%);
     /* animation: topin 1s forwards;
     opacity: 0; */
+    z-index: 1;
   
     
 }
@@ -709,5 +710,10 @@ body,html{
   @media screen and (max-width:600px) {
       .myname{
         font-size: 45px;
+      }
+      .earth-img{
+        width: 325px;
+       
+        
       }
     }
