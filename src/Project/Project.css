@@ -1,6 +1,4 @@
-*{
-  /* border: 2px solid magenta; */
-}
+
 .slider-container {
   /* margin-top: 100px; */
   position: relative;
@@ -101,7 +99,7 @@
   gap: 10px;
   margin-top: 20px;
   animation: bottomup 1.5s ease;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
  
 }
 .controls button{
@@ -169,7 +167,7 @@ button:hover{
 .controls{
  margin-bottom: 110px;
  position: relative;
- top: -20px;
+ top: -15px;
 
 }
 }

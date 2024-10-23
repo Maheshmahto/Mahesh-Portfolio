@@ -7,7 +7,8 @@
 /* profile card */
 .profile-card{ 
     width: 22%;
-    height: 430px;
+    /* height: 400px; */
+    height: 400px;
     /* border: 2px solid black; */
     margin:  0 30px;
     border-radius: 20px;
@@ -27,7 +28,8 @@
 }
 .bg-img img{
     object-fit: cover;
-    height: 200px;
+    height: 180px;
+    /* height: 150px; */
     width: 100%;
     overflow: hidden;
     border-radius: 17px 17px 0 0;
@@ -133,14 +135,16 @@
 .skills::-webkit-scrollbar{
     height: 2px;
     width: 5px ;
+   
 }
 .skills::-webkit-scrollbar-track{
    background: #1b2735;
    background: white;
-   border-radius: 15px;
+   border-radius: 20px;
 }
 .skills::-webkit-scrollbar-thumb{
     background: #1b2735;
+    border-radius: 10px;
 
 }
 .skills h1{
@@ -309,10 +313,7 @@ textarea:focus{
         white-space:normal ;
         
     }
-    .contact-container{
-        /* border: 1px solid white; */
-
-    }
+   
     .contact{
         /* border: 1px solid white; */
         width: 100%;
@@ -327,15 +328,32 @@ textarea:focus{
     .outer-container{
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
     .profile-card{
         margin-top: 30px;
         width: 80%;
        
-         margin-bottom: 10px;
+         margin-bottom: 20px;
+         height: 340px;
     }
     .skills{
-        width: 95%;
+        width: 96%;
+       height: 100%;
+       
+
+    }
+    .sill-container{
+        gap: 30px;
+        /* border: 1px solid white; */
+    }
+    .bg-img img{
+        height: 120px;
+      
+    }
+    .skills h1{
+        margin: 0px 20px;
+       
     }
 
     /* contact */

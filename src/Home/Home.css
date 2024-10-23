@@ -713,7 +713,9 @@ body,html{
       }
       .earth-img{
         width: 325px;
+        bottom: -300px;
        
         
       }
+
     }
