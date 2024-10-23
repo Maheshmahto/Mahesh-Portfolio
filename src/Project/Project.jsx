@@ -32,7 +32,7 @@ import './Project.css'
       {
         title: "Notes",
         description:
-          "I built a notes app  in Ract that stores data in local storage, allowing users to customize the background of their notes for a personalized experience.",
+          "I built a notes app  in React that stores data in local storage, allowing users to customize the background of their notes for a personalized experience.",
         image: "/notes-removebg-preview.png",
         link: "https://notes-app-olive-zeta.vercel.app/",
       },
