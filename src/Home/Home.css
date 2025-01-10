@@ -17,8 +17,8 @@ body,html{
    overflow: hidden;
    box-sizing: border-box;
    /* width: 100%; */
-   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); 
-   /* background: black; */
+   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);  */
+   background: black;
    display: flex;
    /* border: 1px solid magenta; */
   
