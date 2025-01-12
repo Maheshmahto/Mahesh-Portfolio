@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .slider-container {
   /* margin-top: 100px; */
   position: relative;
@@ -60,6 +63,7 @@
   font-size: 1.2rem;
   color: white;
   margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
 }
 
 .image {
@@ -128,6 +132,16 @@ button {
   cursor: pointer;
   background: transparent;
 }
+.demo{
+  color: white;
+  border: 1px solid white;
+  padding: 0.55em 1.75em;
+  border-radius: 25px;
+  margin-top: 60px;
+}
+.demo:hover{
+  box-shadow: 0 0 8px;
+}
 
 button a{
   color: white;
@@ -135,7 +149,10 @@ button a{
 button:hover{
   box-shadow: 0 0 8px;
 }
+.heading-text{
+  font-family: "Roboto", serif;
 
+}
 
 @media screen and (max-width :600px) {
   .slider-container{

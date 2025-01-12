@@ -60,9 +60,8 @@ import './Project.css'
               <div className="content">
                 <h1 className="heading-text">{slide.title}</h1>
                 <p className="desc">{slide.description}</p>
-                <button className="learn-more flex" onClick={() => navigate(slide.link)}>
-                  Demo  
-                </button>
+                <br />
+                  <a href={slide.link} className="demo" >Demo</a>
               </div>             
               <div className="image">
                 <img src={slide.image}  />
