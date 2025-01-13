@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 
@@ -8,7 +9,6 @@ body,html{
     margin: 0;
     padding: 0;
  }
-
 
 
 .home-container{
@@ -652,15 +652,34 @@ body,html{
   
     
 }
-
-.myname{
+.introduction{
     position: absolute;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.hello{
     color: white;
-    font-size: 70px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    animation: rightin 3s forwards ease;
+
+}
+.myname{
+    /* position: absolute; */
+    color: white;
+    font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-family: "Playwrite GB S", cursive;
-    animation: topin 3s forwards ease;
-    opacity: 0;
+    animation: leftin 3s forwards ease;
+    /* opacity: 0; */
+    font-weight: 500;
+}
+
+*{
+    /* border: 1px solid magenta; */
 }
 .greet{
     color: white;
@@ -709,13 +728,24 @@ body,html{
 
   @media screen and (max-width:600px) {
       .myname{
-        font-size: 45px;
+        font-size: 25px;
       }
       .earth-img{
         width: 325px;
         bottom: -300px;
        
-        
-      }
 
+      }
+      .introduction{
+        top:250px ;
+        margin-left: 30px;
+      }
+      .hello{
+        font-size: 20px;
+      }
     }
+    @media screen and (max-width:1000px) {
+      .myname{
+        font-size: 40px;
+      }
+      }
