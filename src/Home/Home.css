@@ -736,16 +736,5 @@ body,html{
        
 
       }
-      .introduction{
-        top:250px ;
-        margin-left: 30px;
-      }
-      .hello{
-        font-size: 20px;
-      }
+
     }
-    @media screen and (max-width:1000px) {
-      .myname{
-        font-size: 40px;
-      }
-      }

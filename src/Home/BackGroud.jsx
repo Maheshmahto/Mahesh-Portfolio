@@ -14,7 +14,8 @@ const BackGroud = () => {
         <p className="myname">i am a fronted-developer </p>
       </div>
     </div>
-  );
-};
 
-export default BackGroud;
+  )
+}
+
+export default BackGroud
