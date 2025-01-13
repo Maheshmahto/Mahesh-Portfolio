@@ -61,10 +61,16 @@ import './Project.css'
                 <h1 className="heading-text">{slide.title}</h1>
                 <p className="desc">{slide.description}</p>
                 <br />
-                  <a href={slide.link} className="demo" >Demo</a>
+                  <a href={slide.link} className="demo" 
+                  target='_blank'
+                   rel="noopener noreferrer"
+                  >Demo</a>
               </div>             
               <div className="image">
-                <img src={slide.image}  />
+                <img src={slide.image} 
+                 
+
+                />
               </div>
             </div>
           ))}
