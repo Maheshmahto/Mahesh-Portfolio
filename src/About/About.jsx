@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import GitHubCalendar from 'react-github-calendar';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
@@ -231,7 +232,11 @@ const About = () => {
             <h4>C++</h4>
           </div>
         </div>
-        <h1>Contact me</h1>
+        <div className="github-celender">
+                  <GitHubCalendar username="Maheshmahto" />
+
+        </div>
+        <h1>Contact Me</h1>
        <form action="https://formspree.io/f/xvgogzdg" method="POST" >
         <div className="contact-container">
           <div className="contact">

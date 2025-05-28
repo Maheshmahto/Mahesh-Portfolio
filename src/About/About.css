@@ -362,3 +362,19 @@ textarea:focus{
         width: 100%;
     } */
 }
+.react-activity-calendar text {
+  fill: white; /* Or #FFFFFF */
+}
+.github-celender{
+    margin: 20px;
+}
+/* GitHub Calendar styles */
+.react-activity-calendar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Or a more specific width if needed */
+}
+
+/* Responsive styles for GitHub Calendar */
+
+/* Mobile devices */

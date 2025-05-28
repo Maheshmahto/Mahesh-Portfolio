@@ -63,6 +63,8 @@ z-index: 10;
 .navbar span:hover::after {
   width: 100%;
 }
+
+
 @media screen  and (max-width :600px){
   .navbar{
     width: 50% !important;
