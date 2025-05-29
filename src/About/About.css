@@ -344,7 +344,9 @@ textarea:focus{
 
     }
     .sill-container{
-        gap: 30px;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        gap: 20px;
         /* border: 1px solid white; */
     }
     .bg-img img{
