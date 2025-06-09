@@ -1,30 +1,25 @@
 import React from "react";
 import "./About.css";
-import GitHubCalendar from 'react-github-calendar';
+import GitHubCalendar from "react-github-calendar";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
- import '../Home/Home.css'
+import "../Home/Home.css";
 const About = () => {
   return (
-    
-         
-
     <div className="outer-container">
-       
       <div className="profile-card">
         <div className="bg-img">
           <img src="/taj hotel.jpeg" alt="" />
         </div>
         <div className="photo-container">
-        <div className="profile-img">
-          <img src="/Mm.jpg" alt="" />
+          <div className="profile-img">
+            <img src="/Mm.jpg" alt="" />
+          </div>
         </div>
 
-        </div>
-       
         <h2>Mahesh Mahto</h2>
         <p className="titel">frontend-developer</p>
         <button className="resume-btn">
@@ -51,11 +46,21 @@ const About = () => {
             <FaInstagram />
           </a>
           <a href="https://x.com/mahesh4387" className="twitter">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="white" d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>     
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="white"
+                d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"
+              />
+            </svg>
           </a>
         </div>
       </div>
-{/* skill container */}
+      {/* skill container */}
       <div className="skills">
         <h1>Technical Skills</h1>
         <div className="sill-container">
@@ -160,6 +165,38 @@ const About = () => {
           <div className="skill-rectangle">
             <div className="circle">
               <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="#fffff"
+                  d="M16 2a14 14 0 1 0 5.816 26.723L12 14v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2.434a1 1 0 0 1 .857.486l11.491 19.15A14 14 0 0 0 16 2m8 16h-4V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1Z"
+                />
+              </svg>
+            </div>
+            <h4>Next.js</h4>
+          </div>
+          <div className="skill-rectangle">
+            <div className="circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="#0288d1"
+                  d="M2 2v12h12V2zm4 6h3v1H8v4H7V9H6zm5 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1"
+                />
+              </svg>
+            </div>
+            <h4>TypeScript</h4>
+          </div>
+          <div className="skill-rectangle">
+            <div className="circle">
+              <svg
                 className="icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -233,43 +270,50 @@ const About = () => {
           </div>
         </div>
         <div className="github-celender">
-                  <GitHubCalendar username="Maheshmahto" />
-
+          <GitHubCalendar username="Maheshmahto" />
         </div>
         <h1>Contact Me</h1>
-       <form action="https://formspree.io/f/xvgogzdg" method="POST" >
-        <div className="contact-container">
-          <div className="contact">
-            <div className="name">
-              <input type="text" required placeholder="First Name" name="first name" />
-              <input type="text" required placeholder="Last Name" name="last name" />
-            </div>
+        <form action="https://formspree.io/f/xvgogzdg" method="POST">
+          <div className="contact-container">
+            <div className="contact">
+              <div className="name">
+                <input
+                  type="text"
+                  required
+                  placeholder="First Name"
+                  name="first name"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Last Name"
+                  name="last name"
+                />
+              </div>
 
-            <input
-              type="text"
-              className="email"
-              required
-              placeholder="Enter your Email"
-              name="email"
-            />
-            <textarea
-              name="message"
-              className="message"
-              id=""
-              required
-              placeholder="Enter your message"
-              
-            ></textarea>
-            <button>Submit</button>
+              <input
+                type="text"
+                className="email"
+                required
+                placeholder="Enter your Email"
+                name="email"
+              />
+              <textarea
+                name="message"
+                className="message"
+                id=""
+                required
+                placeholder="Enter your message"
+              ></textarea>
+              <button>Submit</button>
+            </div>
           </div>
-        </div>
         </form>
         <footer>
           <p>Email :- maheshmahto1806@gmail.com</p>
         </footer>
       </div>
     </div>
-    
   );
 };
 
