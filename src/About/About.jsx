@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import GitHubCalendar from "react-github-calendar";
 import { FaGithub } from "react-icons/fa";

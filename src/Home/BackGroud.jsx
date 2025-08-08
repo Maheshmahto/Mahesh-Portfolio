@@ -11,7 +11,7 @@ const BackGroud = () => {
       <img className="earth-img" src="/earthPlanet.png" alt="" />
       <div className="introduction">
         <p className="hello">Hi 👋, I'm Mahesh</p>
-        <p className="myname">i am a fronted-developer </p>
+        <p className="myname">i am a frontend-developer </p>
       </div>
     </div>
 
