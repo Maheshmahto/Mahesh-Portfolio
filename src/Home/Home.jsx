@@ -10,9 +10,9 @@ import BackGroud from "./BackGroud";
 
 
 const Home = () => {
-  const [home,setHome]=useState(true);
+  const [home,setHome]=useState(false);
   const [project,setProject]=useState(false);
-  const [about,setAbout]=useState(false);
+  const [about,setAbout]=useState(true);
  
   const handleHome=()=>{
    console.log('home');
